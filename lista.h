@@ -8,8 +8,8 @@
 #include <dirent.h>	//Essa biblioteca usaremos para caminhar sobre a base de dados
 
 //definiões
-
-
+#define USUARIO 1
+#define SISTEMA 2
 
 //structs
 
@@ -58,12 +58,27 @@ typedef struct {
     int julgm4_b;               // Campo 31
     int suspm4_b;               // Campo 32
     int cumprimento_meta4b;     // Campo 33
+    
 } DadosTribunal;
+
+typedef struct No{
+	DadosTribunal dados;
+	struct No *proximo;
+} No;
 
 //funções principais
 
-void concatenar_arquivos();
+void concatenar_arquivos(No **inicio, int entrada);
 void resumo_arquivos();
 void dados_municipio();
+
+//funções de encadeamento
+
+void inserir_na_lista(No **inicio, No *novo_no);
+
+//funções auxiliares
+
+void criar_pastas();
+void clear_buffer();
 
 #endif
