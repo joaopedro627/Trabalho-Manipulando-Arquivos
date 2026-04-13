@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=lista.c
+FileName=..\..\..\teste\Trabalho-Manipulando-Arquivos\lista.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=lista.h
+FileName=..\..\..\teste\Trabalho-Manipulando-Arquivos\lista.h
 CompileCpp=0
 Folder=
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=main.c
+FileName=..\..\..\teste\Trabalho-Manipulando-Arquivos\main.c
 CompileCpp=0
 Folder=
 Compile=1
